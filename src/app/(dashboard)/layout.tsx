@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Menu from "@/components/Menu";
 import Navbar from "@/components/Navbar";
+import { GraduationCap } from "lucide-react";
 
 export default function DashboardLayout({
   children,
@@ -16,8 +17,10 @@ export default function DashboardLayout({
           href="/"
           className="flex items-center justify-center lg:justify-start gap-2"
         >
-          <Image src="/logo.png" alt="logo" width={32} height={32} />
-          <span className="hidden lg:block font-bold text-black">
+          <div className="flex aspect-square size-8 items-center justify-center rounded-full bg-kafedu-500 text-sidebar-primary-foreground">
+            <GraduationCap />
+          </div>
+          <span className="hidden lg:block font-bold text-kafedu-950">
             Kafolo Education
           </span>
         </Link>

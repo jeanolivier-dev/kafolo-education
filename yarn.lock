@@ -753,10 +753,10 @@ loose-envify@^1.0.0, loose-envify@^1.4.0:
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
-lucide@^0.506.0:
-  version "0.506.0"
-  resolved "https://registry.yarnpkg.com/lucide/-/lucide-0.506.0.tgz#0718b06b17c745bd41e75abb3511d342d1de3d8b"
-  integrity sha512-EtFgWgC1F+h57mq+Bj0bufkIkjDqswLKsP7slWtiRlOuhW34hndzcCewUM+RkhjrInm/2N5WIqooPV71buHdJA==
+lucide-react@^0.507.0:
+  version "0.507.0"
+  resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.507.0.tgz#d93a75ed130bd530a368fe1dd4ea009ea90a772b"
+  integrity sha512-XfgE6gvAHwAtnbUvWiTTHx4S3VGR+cUJHEc0vrh9Ogu672I1Tue2+Cp/8JJqpytgcBHAB1FVI297W4XGNwc2dQ==
 
 luxon@^3.2.1:
   version "3.6.1"

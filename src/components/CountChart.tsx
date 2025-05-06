@@ -16,12 +16,12 @@ const data = [
   {
     name: "Filles",
     count: 53,
-    fill: "#FAE27C",
+    fill: "#fb8a3c",
   },
   {
     name: "Garçons",
     count: 53,
-    fill: "#C3EBFA",
+    fill: "#ea670c",
   },
 ];
 
@@ -30,7 +30,7 @@ export default function CountChart() {
     <div className="bg-white rounded-xl w-full h-full p-4">
       {/* TITLE */}
       <div className="flex justify-between items-center">
-        <h1 className="text-gray-950 text-lg font-semibold">Etudiants</h1>
+        <h1 className="text-kafedu-950 text-lg font-semibold">Etudiants</h1>
         <Image src="/moreDark.png" alt="" width={20} height={20} />
       </div>
       {/* CHART */}
@@ -58,14 +58,14 @@ export default function CountChart() {
       {/* BOTTOM */}
       <div className="flex justify-center gap-16">
         <div className="flex flex-col gap-1">
-          <div className="w-5 h-5 bg-[#C3EBFA] rounded-full" />
-          <h1 className="text-gray-900 font-bold">1,234</h1>
-          <h2 className="text-xs text-gray-600">Garçons (55%)</h2>
+          <div className="w-5 h-5 bg-kafedu-600 rounded-full" />
+          <h1 className="text-kafedu-950 font-bold">1,234</h1>
+          <h2 className="text-kafedu-950 text-xs">Garçons (55%)</h2>
         </div>
         <div className="flex flex-col gap-1">
-          <div className="w-5 h-5 bg-[#FAE27C] rounded-full" />
-          <h1 className="text-gray-900 font-bold">1,234</h1>
-          <h2 className="text-xs text-gray-600">Filles (45%)</h2>
+          <div className="w-5 h-5 bg-kafedu-400 rounded-full" />
+          <h1 className="text-kafedu-950 font-bold">1,234</h1>
+          <h2 className="text-kafedu-950 text-xs">Filles (45%)</h2>
         </div>
       </div>
     </div>

@@ -80,7 +80,7 @@ export default function FinanceChart() {
   return (
     <div className="bg-white rounded-xl w-full h-full p-4">
       <div className="flex justify-between items-center">
-        <h1 className="text-gray-900 text-lg font-semibold">Finance</h1>
+        <h1 className="text-kafedu-950 text-lg font-semibold">Finance</h1>
         <Image src="/moreDark.png" alt="" width={20} height={20} />
       </div>
       <ResponsiveContainer width="100%" height="90%">
@@ -118,13 +118,13 @@ export default function FinanceChart() {
           <Line
             type="monotone"
             dataKey="revenus"
-            stroke="#C3EBFA"
+            stroke="#ea670c"
             strokeWidth={5}
           />
           <Line
             type="monotone"
             dataKey="dépenses"
-            stroke="#FAE27C"
+            stroke="#fb8a3c"
             strokeWidth={5}
           />
         </LineChart>
