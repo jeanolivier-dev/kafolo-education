@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { usePathname } from "next/navigation";
 import {
   Home,
   GraduationCap,
@@ -137,6 +140,8 @@ const menuItems = [
 ];
 
 export default function Menu() {
+  const pathname = usePathname();
+
   return (
     <div className="mt-4 text-sm h-screen max-h-screen overflow-y-auto">
       {menuItems.map((i) => (
@@ -146,13 +151,24 @@ export default function Menu() {
           </span>
           {i.items.map((item) => {
             if (item.visible.includes("admin")) {
+              const isActive = pathname === item.href;
+
               return (
                 <Link
                   href={item.href}
                   key={item.label}
-                  className="flex items-center justify-center lg:justify-start gap-4 text-gray-800 py-2 md:px-2 rounded-md hover:bg-kafedu-100"
+                  className={`flex items-center justify-center lg:justify-start gap-4 py-2 md:px-2 rounded-md transition-all duration-200
+                    ${
+                      isActive
+                        ? "bg-kafedu-200 text-kafedu-950"
+                        : "text-gray-800 hover:bg-kafedu-100"
+                    }`}
                 >
-                  <item.icon className="h-5 w-5 text-gray-800" />
+                  <item.icon
+                    className={`h-5 w-5 ${
+                      isActive ? "text-kafedu-950" : "text-gray-800"
+                    }`}
+                  />
                   <span className="hidden lg:block">{item.label}</span>
                 </Link>
               );
