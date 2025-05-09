@@ -31,7 +31,7 @@ const menuItems = [
       {
         icon: Home,
         label: "Accueil",
-        href: "/",
+        href: "/admin",
         visible: ["admin", "teacher", "student", "parent"],
       },
       {
